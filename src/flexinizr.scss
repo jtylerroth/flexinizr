@@ -29,7 +29,23 @@ html, body {
 .fixed-bottom {
   position: fixed;
   width: 100%;
-  top: 0;
+  bottom: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
 }
 
 //(Non)Responsive Images
@@ -147,6 +163,10 @@ html, body {
   .hide-lg {
     display: none;
   }
+
+  .show-lg {
+    display: block;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -159,6 +179,10 @@ html, body {
   .hide-md {
     display: none;
   }
+
+  .show-md {
+    display: block;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -170,6 +194,10 @@ html, body {
   }
   .hide-sm {
     display: none;
+  }
+
+  .show-sm {
+    display: block;
   }
 }
 
