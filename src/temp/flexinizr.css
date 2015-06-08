@@ -15,7 +15,23 @@ html, body {
 .fixed-bottom {
   position: fixed;
   width: 100%;
-  top: 0;
+  bottom: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
 }
 
 img {
@@ -320,6 +336,10 @@ img {
   .hide-lg {
     display: none;
   }
+
+  .show-lg {
+    display: block;
+  }
 }
 /* Portrait tablet to landscape and desktop */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -382,6 +402,10 @@ img {
   .hide-md {
     display: none;
   }
+
+  .show-md {
+    display: block;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media screen and (max-width: 767px) {
@@ -443,6 +467,10 @@ img {
 
   .hide-sm {
     display: none;
+  }
+
+  .show-sm {
+    display: block;
   }
 }
 
