@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'src/compiled/flexinizr-pre.css': ['src/flexinizr.scss']
+                    'src/temp/flexinizr.css': ['src/flexinizr.scss']
                 }
             }
         },
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                     require('autoprefixer')({browsers: ['last 1 version'], cascade: true})]
             },
             dist: {
-                src: 'src/compiled/flexinizr-pre.css',
+                src: 'src/temp/flexinizr.css',
                 dest: 'src/compiled/flexinizr.css'
             }
         }
