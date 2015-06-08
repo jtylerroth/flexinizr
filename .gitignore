@@ -2,4 +2,7 @@ node_modules
 .idea
 .sass-cache
 src/compiled
+src/temp
 api
+demo.css
+demo.html
