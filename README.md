@@ -1,5 +1,4 @@
-![logo](https://raw.github.com/jtylerroth/flexinizr/master/logo.png = 300px)
-A lightweight and intuitive CSS3 Flexbox wrapper with common helpers
+![logo](https://github.com/jtylerroth/Flexinizr/blob/master/logo.png)
 
 
 ### Requirements
