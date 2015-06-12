@@ -76,6 +76,7 @@ html, body {
 /*Flex Declarations*/
 .flex-row, .flex-col, .flex-row-rev, .flex-col-rev {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-row.stretch, .flex-col.stretch {

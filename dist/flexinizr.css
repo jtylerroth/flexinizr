@@ -61,6 +61,8 @@ img {
 .flex-row, .flex-col, .flex-row-rev, .flex-col-rev {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .flex-row.stretch, .flex-col.stretch {
