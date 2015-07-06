@@ -8,8 +8,6 @@ $flex-dirs-2: stretch flex-start center flex-end space-between space-around;
 //***Future User Options***
 $basis-percents: 10 20 25 30 33 40 50 60 66 70 75 80 90 100;
 $responsive-images: true;
-$max-flex-grow: 3;
-$max-flex-shrink: 3;
 $container-width: 1200px;
 $mobile-first: false;
 
@@ -126,73 +124,70 @@ html, body {
 }
 
 /*Flex Grow*/
-[flex] {
-  flex-grow: 1;
-}
-
-@for $i from 1 through $max-flex-grow {
-  [flex="#{$i}"] {
-    flex-grow: $i;
-  }
-}
-
-@for $i from 1 through $max-flex-shrink {
-  [flex-shrink="#{$i}"] {
-    flex-shrink: $i;
-  }
+.flex {
+  flex-grow: 1 !important;
 }
 
 @each $percent in $basis-percents {
-  .basis-#{$percent} {
-    flex-basis: percentage($percent/100);
+  .flex-#{$percent} {
+    flex: 0 0 percentage($percent/100);
   }
 }
 
 /* Large desktop */
 @media screen and (min-width: 1200px) {
   @each $percent in $basis-percents {
-    .basis-lg-#{$percent} {
-      flex-basis: percentage($percent/100) !important;
+    .flex-lg-#{$percent} {
+      flex: 0 0 percentage($percent/100) !important;
     }
+  }
+  .flex-lg {
+    flex-grow: 1 !important;
   }
   .hide-lg {
     display: none;
   }
 
   .show-lg {
-    display: block;
+    display: inherit;
   }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   @each $percent in $basis-percents {
-    .basis-md-#{$percent} {
-      flex-basis: percentage($percent/100) !important;
+    .flex-md-#{$percent} {
+      flex: 0 0 percentage($percent/100) !important;
     }
+  }
+  .flex-md {
+    flex-grow: 1 !important;
   }
   .hide-md {
     display: none;
   }
 
   .show-md {
-    display: block;
+    display: inherit;
   }
 }
 
 /* Landscape phone to portrait tablet */
 @media screen and (max-width: 767px) {
   @each $percent in $basis-percents {
-    .basis-sm-#{$percent} {
-      flex-basis: percentage($percent/100) !important;
+    .flex-sm-#{$percent} {
+      flex: 0 0 percentage($percent/100) !important;
     }
+  }
+  .flex-sm {
+    flex-grow: 1 !important;
   }
   .hide-sm {
     display: none;
   }
 
   .show-sm {
-    display: block;
+    display: inherit;
   }
 }
 
