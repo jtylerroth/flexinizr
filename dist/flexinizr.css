@@ -359,7 +359,7 @@ img {
             flex: 0 0 100% !important;
   }
 
-  .flex-lg-fit {
+  .flex-lg {
     -webkit-flex-grow: 1 !important;
             flex-grow: 1 !important;
   }
@@ -444,7 +444,7 @@ img {
             flex: 0 0 100% !important;
   }
 
-  .flex-md-fit {
+  .flex-md {
     -webkit-flex-grow: 1 !important;
             flex-grow: 1 !important;
   }
@@ -529,7 +529,7 @@ img {
             flex: 0 0 100% !important;
   }
 
-  .flex-sm-fit {
+  .flex-sm {
     -webkit-flex-grow: 1 !important;
             flex-grow: 1 !important;
   }

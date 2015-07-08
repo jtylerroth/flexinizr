@@ -50,12 +50,20 @@ module.exports = function (grunt) {
                 src: 'src/temp/flexinizr.css',
                 dest: 'src/compiled/flexinizr.css'
             }
+        },
+        uglify: {
+            my_target: {
+                files: {
+                    'dist/flexinizr.min.js': ['src/*.js']
+                }
+            }
         }
     });
 
 
     // Load
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
@@ -63,6 +71,6 @@ module.exports = function (grunt) {
 
 
     // Register
-    grunt.registerTask('default', ['sass', 'postcss', 'copy', 'cssmin']);
+    grunt.registerTask('default', ['sass', 'postcss', 'copy', 'cssmin', 'uglify']);
 
 };
