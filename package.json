@@ -1,5 +1,5 @@
 {
-  "name": "Flexinizr",
+  "name": "flexinizr",
   "version": "0.9.0",
   "description": "A CSS3 Flexbox wrapper",
   "repository": {
@@ -7,9 +7,9 @@
     "url": "https://github.com/jtylerroth/Flexinizr"
   },
   "keywords": [
-    "Flex",
-    "Flexbox",
-    "Wrapper"
+    "flex",
+    "flexbox",
+    "wrapper"
   ],
   "author": "Tyler Roth",
   "license": "MIT",

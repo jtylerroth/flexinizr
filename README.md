@@ -1,4 +1,4 @@
-![logo](https://github.com/jtylerroth/Flexinizr/blob/master/logo.png)
+![logo](http://flexinizr.io/logo.png)
 
 
 ### Requirements
