@@ -7,9 +7,9 @@ $flex-dirs-2: stretch flex-start center flex-end space-between space-around;
 
 //***Future User Options***
 $basis-percents: 10 20 25 30 33 40 50 60 66 70 75 80 90 100;
+$max-flex-order: 11;
 $responsive-images: true;
 $container-width: 1200px;
-$mobile-first: false;
 
 html, body {
   margin: 0;
@@ -72,6 +72,8 @@ html, body {
 }
 
 /*Flex Declarations*/
+
+
 .flex-row, .flex-col, .flex-row-rev, .flex-col-rev {
   display: flex;
   flex-wrap: wrap;
@@ -125,6 +127,12 @@ html, body {
   }
 }
 
+@for $order from 1 to $max-flex-order {
+  [flex-order="#{$order}"] {
+    order: $order;
+  }
+}
+
 /*Flex Grow*/
 .flex {
   flex-grow: 1 !important;
@@ -168,7 +176,6 @@ html, body {
   .hide-md {
     display: none;
   }
-
   .show-md {
     display: inherit;
   }
