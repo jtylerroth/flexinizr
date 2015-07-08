@@ -11,23 +11,25 @@ $responsive-images: true;
 $container-width: 1200px;
 $mobile-first: false;
 
-/*Normalize*/
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-/*Helpers*/
-.fixed-top {
+/**Helpers*/
+.fixed {
   position: fixed;
   width: 100%;
+}
+
+.fixed-top {
+  @extend .fixed;
   top: 0;
 }
 
 .fixed-bottom {
-  position: fixed;
-  width: 100%;
+ @extend .fixed;
   bottom: 0;
 }
 
@@ -39,6 +41,8 @@ html, body {
   max-width: $container-width;
   margin: 0 auto;
 }
+
+//End Helpers
 
 //(Non)Responsive Images
 @if ($responsive-images) {
@@ -61,10 +65,6 @@ html, body {
   }
 }
 
-.flex-border {
-  box-sizing: border-box;
-}
-
 .truncate {
   white-space: nowrap;
   overflow: hidden;
@@ -75,10 +75,12 @@ html, body {
 .flex-row, .flex-col, .flex-row-rev, .flex-col-rev {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .flex-row.stretch, .flex-col.stretch {
   height: 100%;
+  width: 100%;
 }
 
 .no-wrap {
