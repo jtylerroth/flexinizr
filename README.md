@@ -1,4 +1,4 @@
-![logo](http://flexinizr.io/logo.png)
+![logo](https://lh5.googleusercontent.com/nOE8PwBCl8gQ4Y2VLxhKNLUK2xV3m71OJyq3kcR1YSXeV7YMLeciaB5fU7c50p-voRM_MB-catjJBJA=w1920-h995-rw)
 
 ### Requirements
 
